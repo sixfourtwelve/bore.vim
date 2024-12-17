@@ -1,7 +1,7 @@
 " Vim Color File"
 " Name: bore.vim"
-" Author: Ethan Morgan (@gweithio)"
-" Maintainer: https://github.com/gweithio/bore.vim"
+" Author: Ethan Morgan (@sixfourtwelve)"
+" Maintainer: https://github.com/sixfourtwelve/bore.vim"
 " License: The MIT License (MIT)"
 
 " === Colors ==="
@@ -12,7 +12,7 @@
 :let _gray_light  = '#74778c'
 :let _gray        = '#606375'
 :let _gray_dark   = '#535560'
-:let _semigray    = "#42444b"
+:let _semigray    = '#42444b'
 :let _lightblack  = '#313e52'
 :let _semiblack   = '#262f3e'
 :let _black       = '#0e0e0e'
@@ -811,8 +811,36 @@ hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
 hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
 hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
 
+" Treesitter specific highlighting
+hi @type guifg=#ffffff gui=NONE cterm=NONE 
+hi @type.builtin guifg=#ffffff gui=NONE cterm=NONE 
+hi @type.qualifier guifg=#ffffff gui=NONE cterm=NONE 
+hi @type.definition guifg=#ffffff gui=NONE cterm=NONE 
+
+hi link @parameter _pink
+hi link @parameter.builtin _pink
+hi link @variable.argument _pink
+hi link @lsp.type.parameter _pink
+
+hi @tag guifg=#6cbeff gui=NONE cterm=NONE
+hi @tag.builtin guifg=#FD98B9 gui=NONE cterm=NONE 
+hi @tag.attribute guifg=#7fdbca gui=NONE cterm=NONE 
+
+hi @variable.member guifg=#9fd4ff gui=NONE cterm=NONE 
+
+hi link @variable.parameter NONE
+hi @variable.parameter guifg=#FD98B9 gui=NONE cterm=NONE
+hi @variable guifg=#FD98B9 gui=NONE cterm=NONE
+hi @function.call guifg=#7fdbca gui=NONE cterm=NONE
+hi link @variable.parameter Identifier
+hi link @variable.parameter _pink
+let colorgroup['@variable.parameter'] = {"GUIFG": _pink}
+let colorgroup['@parameter'] = {"GUIFG": _pink}
+let colorgroup['@lsp.type.parameter'] = {"GUIFG": _pink}
+let colorgroup['Structure'] = {"GUIFG": _white}
+let colorgroup['@type'] = {"GUIFG": _white}
+
 
 " Must appear at the end of the file to work around this oddity:
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
-
