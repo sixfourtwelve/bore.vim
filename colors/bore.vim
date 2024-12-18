@@ -843,7 +843,9 @@ hi @constructor guifg=#7fdbca gui=NONE cterm=NONE
 hi @property guifg=#7fdbca gui=NONE cterm=NONE
 hi @boolean guifg=#6cbeff gui=NONE cterm=NONE
 hi @punctuation.bracket guifg=#75778c gui=NONE cterm=NONE 
-hi @punctuation.delimiter guifg=#75778c gui=NONE cterm=NONE 
+hi @punctuation.delimiter guifg=#75778c gui=NONE cterm=NONE
+hi @attribute guifg=#6cbeff gui=NONE cterm=NONE
+
 let colorgroup['@variable.parameter'] = {"GUIFG": _pink}
 let colorgroup['@parameter'] = {"GUIFG": _pink}
 let colorgroup['@lsp.type.parameter'] = {"GUIFG": _pink}
