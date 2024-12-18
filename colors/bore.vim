@@ -836,6 +836,10 @@ hi @function.builtin guifg=#7fdbca gui=NONE cterm=NONE
 hi link @variable.parameter Identifier
 hi link @variable.parameter _pink
 hi @keyword.modifier guifg=#75778C gui=NONE cterm=NONE
+hi @keyword.operator guifg=#75778C gui=NONE cterm=NONE
+hi @constructor guifg=#7fdbca gui=NONE cterm=NONE
+hi @property guifg=#7fdbca gui=NONE cterm=NONE
+hi @boolean guifg=#6cbeff gui=NONE cterm=NONE
 let colorgroup['@variable.parameter'] = {"GUIFG": _pink}
 let colorgroup['@parameter'] = {"GUIFG": _pink}
 let colorgroup['@lsp.type.parameter'] = {"GUIFG": _pink}
