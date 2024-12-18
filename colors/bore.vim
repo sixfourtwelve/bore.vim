@@ -833,6 +833,8 @@ hi @variable.parameter guifg=#FD98B9 gui=NONE cterm=NONE
 hi @variable guifg=#FD98B9 gui=NONE cterm=NONE
 hi @function.call guifg=#7fdbca gui=NONE cterm=NONE
 hi @function.builtin guifg=#7fdbca gui=NONE cterm=NONE
+hi @function.method.call guifg=#7fdbca gui=NONE cterm=NONE
+hi @variable.member guifg=#7fdbca gui=NONE cterm=NONE
 hi link @variable.parameter Identifier
 hi link @variable.parameter _pink
 hi @keyword.modifier guifg=#75778C gui=NONE cterm=NONE
