@@ -825,15 +825,17 @@ hi link @lsp.type.parameter _pink
 hi @tag guifg=#6cbeff gui=NONE cterm=NONE
 hi @tag.builtin guifg=#FD98B9 gui=NONE cterm=NONE 
 hi @tag.attribute guifg=#7fdbca gui=NONE cterm=NONE 
+hi @module guifg=#6cbeff gui=NONE cterm=NONE
 
-hi @variable.member guifg=#9fd4ff gui=NONE cterm=NONE 
-
+hi @constant guifg=#7fdbca gui=NONE cterm=NONE
 hi link @variable.parameter NONE
 hi @variable.parameter guifg=#FD98B9 gui=NONE cterm=NONE
 hi @variable guifg=#FD98B9 gui=NONE cterm=NONE
 hi @function.call guifg=#7fdbca gui=NONE cterm=NONE
+hi @function.builtin guifg=#7fdbca gui=NONE cterm=NONE
 hi link @variable.parameter Identifier
 hi link @variable.parameter _pink
+hi @keyword.modifier guifg=#75778C gui=NONE cterm=NONE
 let colorgroup['@variable.parameter'] = {"GUIFG": _pink}
 let colorgroup['@parameter'] = {"GUIFG": _pink}
 let colorgroup['@lsp.type.parameter'] = {"GUIFG": _pink}
